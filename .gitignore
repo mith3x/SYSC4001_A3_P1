@@ -7,7 +7,6 @@ output_files/
 *.lib
 *.pdb
 *.log
-execution*.txt
 *.out
 *.a
 *.so

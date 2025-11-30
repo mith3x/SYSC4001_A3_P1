@@ -304,7 +304,26 @@ int main(int argc, char **argv) {
 
     auto [exec] = run_simulation(list_process);
 
-    write_output(exec, "execution.txt");
+    // derive an output filename from the input file name so each test
+    // writes its own execution file (e.g., test1.txt -> execution1.txt)
+    std::string inname = file_name;
+    std::string base = inname;
+    // strip any path
+    auto pos = base.find_last_of("/\\");
+    if (pos != std::string::npos) base = base.substr(pos + 1);
+    // strip extension
+    pos = base.find_last_of('.');
+    if (pos != std::string::npos) base = base.substr(0, pos);
+
+    std::string outname;
+    if (base.rfind("test", 0) == 0 && base.size() > 4) {
+        // testN -> executionN
+        outname = std::string("execution") + base.substr(4) + ".txt";
+    } else {
+        outname = std::string("execution_") + base + ".txt";
+    }
+
+    write_output(exec, outname.c_str());
 
     return 0;
 }
