@@ -5,7 +5,7 @@
  * 
  */
 
-#include "interrupts_student1_student2.hpp"
+#include "interrupts_101262467_101236818.hpp"
 
 // Helper: pick highest-priority READY process (lower priority value = higher)
 static void dispatch_highest_priority(

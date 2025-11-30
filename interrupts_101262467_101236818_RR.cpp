@@ -5,44 +5,28 @@
  * 
  */
 
-/**
- * @file interrupts_student1_student2_RR.cpp
- * @brief Round Robin (RR) scheduler implementation for Assignment 3 Part 1
- */
+#include "interrupts_101262467_101236818.hpp"
 
-#include "interrupts_student1_student2.hpp"
-
-// Helper: find iterator to highest-priority READY process
-// (lower priority value = higher priority).
-// Among equal priorities, pick the earliest (FIFO).
-// Find iterator to highest-priority READY process that is available at current_time
-static std::vector<PCB>::iterator find_best_ready(std::vector<PCB> &ready_queue, unsigned int current_time) {
-    if (ready_queue.empty()) return ready_queue.end();
-
-    auto best_it = ready_queue.end();
-    unsigned int best_prio = UINT_MAX;
-
-    for (auto it = ready_queue.begin(); it != ready_queue.end(); ++it) {
-        if (it->available_time <= current_time) {
-            if (best_it == ready_queue.end() || it->priority < best_prio) {
-                best_prio = it->priority;
-                best_it = it;
-            }
-        }
-    }
-    return best_it;
-}
-
-// Dispatch: move best READY process into RUNNING
-static bool dispatch_best(
+// Helper: pick highest-priority READY process (lower priority value = higher)
+static void dispatch_highest_priority(
     PCB &running,
     std::vector<PCB> &job_list,
     std::vector<PCB> &ready_queue,
-    unsigned int current_time,
-    std::string &execution_status
+    unsigned int current_time
 ) {
-    auto best_it = find_best_ready(ready_queue, current_time);
-    if (best_it == ready_queue.end()) return false;
+    // Find element with minimum priority among items available now
+    auto best_it = ready_queue.end();
+    unsigned int best_prio = UINT_MAX;
+    for (auto it = ready_queue.begin(); it != ready_queue.end(); ++it) {
+        if (it->available_time <= current_time) {
+            if (best_it == ready_queue.end() || it->priority < best_prio) {
+                best_it = it;
+                best_prio = it->priority;
+            }
+        }
+    }
+
+    if (best_it == ready_queue.end()) return; // nothing available now
 
     PCB next = *best_it;
     ready_queue.erase(best_it);
@@ -55,11 +39,6 @@ static bool dispatch_best(
 
     running.state = RUNNING;
     sync_queue(job_list, running);
-
-    execution_status +=
-        print_exec_status(current_time, running.PID, READY, RUNNING);
-
-    return true;
 }
 
 std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
@@ -74,22 +53,22 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
 
     std::string execution_status = print_exec_header();
 
-    const unsigned int QUANTUM = 100;
-    unsigned int time_slice = 0;
-
     while (!all_process_terminated(job_list) || job_list.empty()) {
 
-        // ==================================================
-        // (1) ARRIVALS: NEW -> READY
-        // ==================================================
+        // --------------------------------------------------
+        // (1) ARRIVALS
+        // --------------------------------------------------
         for (auto &process : list_processes) {
             if (process.arrival_time == current_time) {
 
                 bool loaded = assign_memory(process);
                 if (!loaded) {
-                    // For simplicity, if no memory, skip for now
                     continue;
                 }
+
+                // External priority: by default, we used PID as priority
+                // (already set in add_process), but you can adjust here
+                // if you want a different rule.
 
                 process.state = READY;
                 process.time_since_last_io = 0;
@@ -103,15 +82,14 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
             }
         }
 
-        // ==================================================
-        // (2) I/O COMPLETION: WAITING -> READY
-        // ==================================================
+        // --------------------------------------------------
+        // (2) MANAGE WAIT QUEUE (I/O completion)
+        // --------------------------------------------------
         for (auto it = wait_queue.begin(); it != wait_queue.end(); ) {
 
             it->io_remaining--;
 
             if (it->io_remaining == 0) {
-
                 states old_state = WAITING;
                 it->state = READY;
                 it->time_since_last_io = 0;
@@ -133,59 +111,31 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
             }
         }
 
-        // ==================================================
-        // (3) PREEMPTION LOGIC (priority-based) + DISPATCH
-        // ==================================================
+        // --------------------------------------------------
+        // (3) DISPATCH IF CPU IDLE (no preemption)
+        // --------------------------------------------------
+        if (running.PID == -1 && !ready_queue.empty()) {
 
-        if (!ready_queue.empty()) {
-            auto best_it = find_best_ready(ready_queue, current_time);
-            if (best_it == ready_queue.end()) {
-                // No process is available at this exact millisecond; do nothing.
-            } else {
-                if (running.PID == -1) {
-                    // CPU idle: just dispatch best
-                    dispatch_best(running, job_list, ready_queue, current_time, execution_status);
-                    if (running.PID != -1) {
-                        time_slice = 0;
-                    }
-                } else {
-                    if (best_it->priority < running.priority) {
+            dispatch_highest_priority(running, job_list, ready_queue, current_time);
 
-                        states old_state = RUNNING;
-                        running.state = READY;
-                        sync_queue(job_list, running);
-                        ready_queue.push_back(running);
-
-                        execution_status +=
-                            print_exec_status(current_time,
-                                              running.PID,
-                                              old_state,
-                                              READY);
-
-                        running.PID = -1;
-                        time_slice  = 0;
-
-                        // Now dispatch better one
-                        dispatch_best(running, job_list, ready_queue, current_time, execution_status);
-                    }
-                }
+            if (running.PID != -1) {
+                execution_status +=
+                    print_exec_status(current_time, running.PID, READY, RUNNING);
             }
-        } else if (running.PID == -1) {
         }
 
-        // ==================================================
+        // --------------------------------------------------
         // (4) EXECUTE 1 ms OF CURRENT PROCESS
-        // ==================================================
+        // --------------------------------------------------
         if (running.PID != -1) {
 
             running.remaining_time--;
+
             if (running.io_freq > 0) {
                 running.time_since_last_io++;
             }
 
             sync_queue(job_list, running);
-
-            bool still_running = true;
 
             // (a) Finished?
             if (running.remaining_time == 0) {
@@ -201,8 +151,6 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
                                       TERMINATED);
 
                 running.PID = -1;
-                time_slice  = 0;
-                still_running = false;
             }
             // (b) Needs I/O? (RUNNING -> WAITING)
             else if (running.io_freq > 0 &&
@@ -224,36 +172,13 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
                                       WAITING);
 
                 running.PID = -1;
-                time_slice  = 0;
-                still_running = false;
             }
-
-            // (c) Quantum expiry: RR within same (or all) priorities
-            if (still_running) {
-                time_slice++;
-
-                if (time_slice == QUANTUM) {
-
-                    states old_state = RUNNING;
-                    running.state = READY;
-                    sync_queue(job_list, running);
-                    ready_queue.push_back(running);
-
-                    execution_status +=
-                        print_exec_status(current_time,
-                                          running.PID,
-                                          old_state,
-                                          READY);
-
-                    running.PID = -1;
-                    time_slice  = 0;
-                }
-            }
+            // NOTE: no quantum / preemption here for EP
         }
 
-        // ==================================================
-        // (5) Safety: break if nothing exists and nothing to arrive
-        // ==================================================
+        // --------------------------------------------------
+        // (5) Safety break if nothing exists and nothing will arrive
+        // --------------------------------------------------
         if (job_list.empty() && ready_queue.empty() && wait_queue.empty() && running.PID == -1) {
             bool any_future_arrivals = false;
             for (auto &p : list_processes) {
@@ -279,7 +204,7 @@ int main(int argc, char **argv) {
     if (argc != 2) {
         std::cout << "ERROR!\nExpected 1 argument, received "
                   << argc - 1 << std::endl;
-        std::cout << "To run the program, do: ./interrupts_EP_RR <your_input_file.txt>"
+        std::cout << "To run the program, do: ./interrupts_EP <your_input_file.txt>"
                   << std::endl;
         return -1;
     }

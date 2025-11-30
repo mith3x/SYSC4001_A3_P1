@@ -10,7 +10,7 @@
  * @brief Round Robin (RR) scheduler implementation for Assignment 3 Part 1
  */
 
-#include "interrupts_student1_student2.hpp"
+#include "interrupts_101262467_101236818.hpp"
 
 // Helper: find iterator to highest-priority READY process
 // (lower priority value = higher priority).
