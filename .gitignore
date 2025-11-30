@@ -1,0 +1,18 @@
+bin/
+output_files/
+*.o
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.log
+execution*.txt
+*.out
+*.a
+*.so
+# Visual Studio / VSCode
+.vscode/
+/.vs/
+*.user
+.DS_Store
