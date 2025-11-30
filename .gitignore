@@ -13,5 +13,6 @@ output_files/
 # Visual Studio / VSCode
 .vscode/
 /.vs/
-*.user
-.DS_Store
+bin/
+
+# output_files/
