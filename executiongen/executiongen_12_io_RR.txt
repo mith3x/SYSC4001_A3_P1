@@ -1,0 +1,94 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 4 |1202 |       NEW |     READY |
+|                 4 |1204 |       NEW |     READY |
+|                 4 |1202 |     READY |   RUNNING |
+|                 5 |1201 |       NEW |     READY |
+|                 5 |1203 |       NEW |     READY |
+|                 7 |1202 |   RUNNING |   WAITING |
+|                 7 |1201 |     READY |   RUNNING |
+|                10 |1201 |   RUNNING |   WAITING |
+|                10 |1203 |     READY |   RUNNING |
+|                13 |1202 |   WAITING |     READY |
+|                14 |1201 |   WAITING |     READY |
+|                15 |1203 |   RUNNING |   WAITING |
+|                15 |1201 |     READY |   RUNNING |
+|                18 |1201 |   RUNNING |   WAITING |
+|                19 |1203 |   WAITING |     READY |
+|                18 |1202 |     READY |   RUNNING |
+|                21 |1202 |   RUNNING |   WAITING |
+|                22 |1201 |   WAITING |     READY |
+|                21 |1203 |     READY |   RUNNING |
+|                26 |1203 |   RUNNING |   WAITING |
+|                27 |1202 |   WAITING |     READY |
+|                26 |1201 |     READY |   RUNNING |
+|                29 |1201 |   RUNNING |   WAITING |
+|                30 |1203 |   WAITING |     READY |
+|                29 |1202 |     READY |   RUNNING |
+|                32 |1202 |   RUNNING |   WAITING |
+|                33 |1201 |   WAITING |     READY |
+|                32 |1203 |     READY |   RUNNING |
+|                37 |1203 |   RUNNING |   WAITING |
+|                38 |1202 |   WAITING |     READY |
+|                37 |1201 |     READY |   RUNNING |
+|                40 |1201 |   RUNNING |   WAITING |
+|                41 |1203 |   WAITING |     READY |
+|                40 |1202 |     READY |   RUNNING |
+|                43 |1202 |   RUNNING |   WAITING |
+|                44 |1201 |   WAITING |     READY |
+|                43 |1203 |     READY |   RUNNING |
+|                45 |1203 |   RUNNING |TERMINATED |
+|                45 |1201 |     READY |   RUNNING |
+|                48 |1201 |   RUNNING |   WAITING |
+|                49 |1202 |   WAITING |     READY |
+|                48 |1204 |     READY |   RUNNING |
+|                50 |1204 |   RUNNING |   WAITING |
+|                50 |1202 |     READY |   RUNNING |
+|                52 |1201 |   WAITING |     READY |
+|                53 |1204 |   WAITING |     READY |
+|                53 |1202 |   RUNNING |   WAITING |
+|                53 |1201 |     READY |   RUNNING |
+|                56 |1201 |   RUNNING |   WAITING |
+|                56 |1204 |     READY |   RUNNING |
+|                58 |1204 |   RUNNING |   WAITING |
+|                59 |1202 |   WAITING |     READY |
+|                60 |1201 |   WAITING |     READY |
+|                59 |1202 |     READY |   RUNNING |
+|                61 |1204 |   WAITING |     READY |
+|                62 |1202 |   RUNNING |   WAITING |
+|                62 |1201 |     READY |   RUNNING |
+|                65 |1201 |   RUNNING |   WAITING |
+|                65 |1204 |     READY |   RUNNING |
+|                67 |1204 |   RUNNING |   WAITING |
+|                68 |1202 |   WAITING |     READY |
+|                69 |1201 |   WAITING |     READY |
+|                68 |1202 |     READY |   RUNNING |
+|                70 |1204 |   WAITING |     READY |
+|                71 |1202 |   RUNNING |TERMINATED |
+|                71 |1201 |     READY |   RUNNING |
+|                73 |1201 |   RUNNING |TERMINATED |
+|                73 |1204 |     READY |   RUNNING |
+|                75 |1204 |   RUNNING |   WAITING |
+|                78 |1204 |   WAITING |     READY |
+|                78 |1204 |     READY |   RUNNING |
+|                80 |1204 |   RUNNING |   WAITING |
+|                83 |1204 |   WAITING |     READY |
+|                83 |1204 |     READY |   RUNNING |
+|                85 |1204 |   RUNNING |   WAITING |
+|                88 |1204 |   WAITING |     READY |
+|                88 |1204 |     READY |   RUNNING |
+|                90 |1204 |   RUNNING |   WAITING |
+|                93 |1204 |   WAITING |     READY |
+|                93 |1204 |     READY |   RUNNING |
+|                95 |1204 |   RUNNING |   WAITING |
+|                98 |1204 |   WAITING |     READY |
+|                98 |1204 |     READY |   RUNNING |
+|               100 |1204 |   RUNNING |   WAITING |
+|               103 |1204 |   WAITING |     READY |
+|               103 |1204 |     READY |   RUNNING |
+|               105 |1204 |   RUNNING |   WAITING |
+|               108 |1204 |   WAITING |     READY |
+|               108 |1204 |     READY |   RUNNING |
+|               110 |1204 |   RUNNING |TERMINATED |
++------------------------------------------------+

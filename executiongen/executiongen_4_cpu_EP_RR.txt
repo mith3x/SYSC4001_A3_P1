@@ -1,0 +1,21 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |403 |       NEW |     READY |
+|                 0 |403 |     READY |   RUNNING |
+|                 2 |405 |       NEW |     READY |
+|                 4 |401 |       NEW |     READY |
+|                 4 |404 |       NEW |     READY |
+|                 4 |403 |   RUNNING |     READY |
+|                 4 |401 |     READY |   RUNNING |
+|                 5 |402 |       NEW |     READY |
+|                35 |401 |   RUNNING |TERMINATED |
+|                35 |402 |     READY |   RUNNING |
+|                79 |402 |   RUNNING |TERMINATED |
+|                79 |403 |     READY |   RUNNING |
+|               114 |403 |   RUNNING |TERMINATED |
+|               114 |404 |     READY |   RUNNING |
+|               147 |404 |   RUNNING |TERMINATED |
+|               147 |405 |     READY |   RUNNING |
+|               198 |405 |   RUNNING |TERMINATED |
++------------------------------------------------+

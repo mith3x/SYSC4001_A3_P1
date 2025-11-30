@@ -1,0 +1,66 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |1805 |       NEW |     READY |
+|                 0 |1805 |     READY |   RUNNING |
+|                 1 |1801 |       NEW |     READY |
+|                 1 |1804 |       NEW |     READY |
+|                 1 |1805 |   RUNNING |     READY |
+|                 1 |1801 |     READY |   RUNNING |
+|                 3 |1802 |       NEW |     READY |
+|                 3 |1803 |       NEW |     READY |
+|                11 |1801 |   RUNNING |   WAITING |
+|                11 |1802 |     READY |   RUNNING |
+|                13 |1801 |   WAITING |     READY |
+|                13 |1802 |   RUNNING |     READY |
+|                13 |1801 |     READY |   RUNNING |
+|                23 |1801 |   RUNNING |   WAITING |
+|                23 |1802 |     READY |   RUNNING |
+|                25 |1801 |   WAITING |     READY |
+|                25 |1802 |   RUNNING |     READY |
+|                25 |1801 |     READY |   RUNNING |
+|                27 |1801 |   RUNNING |TERMINATED |
+|                27 |1802 |     READY |   RUNNING |
+|                49 |1802 |   RUNNING |TERMINATED |
+|                49 |1803 |     READY |   RUNNING |
+|                61 |1803 |   RUNNING |TERMINATED |
+|                61 |1804 |     READY |   RUNNING |
+|                67 |1804 |   RUNNING |   WAITING |
+|                67 |1805 |     READY |   RUNNING |
+|                69 |1804 |   WAITING |     READY |
+|                69 |1805 |   RUNNING |     READY |
+|                69 |1804 |     READY |   RUNNING |
+|                75 |1804 |   RUNNING |   WAITING |
+|                75 |1805 |     READY |   RUNNING |
+|                77 |1804 |   WAITING |     READY |
+|                77 |1805 |   RUNNING |     READY |
+|                77 |1804 |     READY |   RUNNING |
+|                83 |1804 |   RUNNING |   WAITING |
+|                83 |1805 |     READY |   RUNNING |
+|                84 |1805 |   RUNNING |   WAITING |
+|                85 |1804 |   WAITING |     READY |
+|                85 |1804 |     READY |   RUNNING |
+|                87 |1805 |   WAITING |     READY |
+|                91 |1804 |   RUNNING |   WAITING |
+|                91 |1805 |     READY |   RUNNING |
+|                93 |1804 |   WAITING |     READY |
+|                93 |1805 |   RUNNING |     READY |
+|                93 |1804 |     READY |   RUNNING |
+|                99 |1804 |   RUNNING |   WAITING |
+|                99 |1805 |     READY |   RUNNING |
+|               101 |1804 |   WAITING |     READY |
+|               101 |1805 |   RUNNING |     READY |
+|               101 |1804 |     READY |   RUNNING |
+|               107 |1804 |   RUNNING |   WAITING |
+|               107 |1805 |     READY |   RUNNING |
+|               109 |1804 |   WAITING |     READY |
+|               109 |1805 |   RUNNING |   WAITING |
+|               109 |1804 |     READY |   RUNNING |
+|               111 |1804 |   RUNNING |TERMINATED |
+|               112 |1805 |   WAITING |     READY |
+|               112 |1805 |     READY |   RUNNING |
+|               118 |1805 |   RUNNING |   WAITING |
+|               121 |1805 |   WAITING |     READY |
+|               121 |1805 |     READY |   RUNNING |
+|               124 |1805 |   RUNNING |TERMINATED |
++------------------------------------------------+

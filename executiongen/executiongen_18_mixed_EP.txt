@@ -1,0 +1,52 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |1805 |       NEW |     READY |
+|                 0 |1805 |     READY |   RUNNING |
+|                 1 |1801 |       NEW |     READY |
+|                 1 |1804 |       NEW |     READY |
+|                 3 |1802 |       NEW |     READY |
+|                 3 |1803 |       NEW |     READY |
+|                 6 |1805 |   RUNNING |   WAITING |
+|                 6 |1801 |     READY |   RUNNING |
+|                 9 |1805 |   WAITING |     READY |
+|                16 |1801 |   RUNNING |   WAITING |
+|                16 |1802 |     READY |   RUNNING |
+|                18 |1801 |   WAITING |     READY |
+|                42 |1802 |   RUNNING |TERMINATED |
+|                42 |1801 |     READY |   RUNNING |
+|                52 |1801 |   RUNNING |   WAITING |
+|                52 |1803 |     READY |   RUNNING |
+|                54 |1801 |   WAITING |     READY |
+|                64 |1803 |   RUNNING |TERMINATED |
+|                64 |1801 |     READY |   RUNNING |
+|                66 |1801 |   RUNNING |TERMINATED |
+|                66 |1804 |     READY |   RUNNING |
+|                72 |1804 |   RUNNING |   WAITING |
+|                72 |1805 |     READY |   RUNNING |
+|                74 |1804 |   WAITING |     READY |
+|                78 |1805 |   RUNNING |   WAITING |
+|                78 |1804 |     READY |   RUNNING |
+|                81 |1805 |   WAITING |     READY |
+|                84 |1804 |   RUNNING |   WAITING |
+|                84 |1805 |     READY |   RUNNING |
+|                86 |1804 |   WAITING |     READY |
+|                90 |1805 |   RUNNING |   WAITING |
+|                90 |1804 |     READY |   RUNNING |
+|                93 |1805 |   WAITING |     READY |
+|                96 |1804 |   RUNNING |   WAITING |
+|                96 |1805 |     READY |   RUNNING |
+|                98 |1804 |   WAITING |     READY |
+|                99 |1805 |   RUNNING |TERMINATED |
+|                99 |1804 |     READY |   RUNNING |
+|               105 |1804 |   RUNNING |   WAITING |
+|               107 |1804 |   WAITING |     READY |
+|               107 |1804 |     READY |   RUNNING |
+|               113 |1804 |   RUNNING |   WAITING |
+|               115 |1804 |   WAITING |     READY |
+|               115 |1804 |     READY |   RUNNING |
+|               121 |1804 |   RUNNING |   WAITING |
+|               123 |1804 |   WAITING |     READY |
+|               123 |1804 |     READY |   RUNNING |
+|               125 |1804 |   RUNNING |TERMINATED |
++------------------------------------------------+

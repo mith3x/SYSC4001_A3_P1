@@ -1,0 +1,63 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |2003 |       NEW |     READY |
+|                 0 |2003 |     READY |   RUNNING |
+|                 1 |2001 |       NEW |     READY |
+|                 1 |2003 |   RUNNING |     READY |
+|                 1 |2001 |     READY |   RUNNING |
+|                 2 |2005 |       NEW |     READY |
+|                 4 |2001 |   RUNNING |   WAITING |
+|                 4 |2004 |       NEW |     READY |
+|                 4 |2003 |     READY |   RUNNING |
+|                 5 |2002 |       NEW |     READY |
+|                 5 |2003 |   RUNNING |     READY |
+|                 5 |2002 |     READY |   RUNNING |
+|                 8 |2001 |   WAITING |     READY |
+|                 8 |2002 |   RUNNING |     READY |
+|                 8 |2001 |     READY |   RUNNING |
+|                11 |2001 |   RUNNING |   WAITING |
+|                11 |2002 |     READY |   RUNNING |
+|                15 |2001 |   WAITING |     READY |
+|                15 |2002 |   RUNNING |     READY |
+|                15 |2001 |     READY |   RUNNING |
+|                18 |2001 |   RUNNING |   WAITING |
+|                18 |2002 |     READY |   RUNNING |
+|                22 |2001 |   WAITING |     READY |
+|                22 |2002 |   RUNNING |     READY |
+|                22 |2001 |     READY |   RUNNING |
+|                25 |2001 |   RUNNING |   WAITING |
+|                25 |2002 |     READY |   RUNNING |
+|                29 |2001 |   WAITING |     READY |
+|                29 |2002 |   RUNNING |     READY |
+|                29 |2001 |     READY |   RUNNING |
+|                32 |2001 |   RUNNING |   WAITING |
+|                32 |2002 |     READY |   RUNNING |
+|                36 |2001 |   WAITING |     READY |
+|                36 |2002 |   RUNNING |     READY |
+|                36 |2001 |     READY |   RUNNING |
+|                39 |2001 |   RUNNING |   WAITING |
+|                39 |2002 |     READY |   RUNNING |
+|                43 |2001 |   WAITING |     READY |
+|                43 |2002 |   RUNNING |     READY |
+|                43 |2001 |     READY |   RUNNING |
+|                46 |2001 |   RUNNING |   WAITING |
+|                46 |2002 |     READY |   RUNNING |
+|                50 |2001 |   WAITING |     READY |
+|                50 |2002 |   RUNNING |     READY |
+|                50 |2001 |     READY |   RUNNING |
+|                51 |2001 |   RUNNING |TERMINATED |
+|                51 |2002 |     READY |   RUNNING |
+|                57 |2002 |   RUNNING |TERMINATED |
+|                57 |2003 |     READY |   RUNNING |
+|                70 |2003 |   RUNNING |TERMINATED |
+|                70 |2004 |     READY |   RUNNING |
+|                80 |2004 |   RUNNING |   WAITING |
+|                80 |2005 |     READY |   RUNNING |
+|                82 |2004 |   WAITING |     READY |
+|                82 |2005 |   RUNNING |     READY |
+|                82 |2004 |     READY |   RUNNING |
+|                87 |2004 |   RUNNING |TERMINATED |
+|                87 |2005 |     READY |   RUNNING |
+|               114 |2005 |   RUNNING |TERMINATED |
++------------------------------------------------+

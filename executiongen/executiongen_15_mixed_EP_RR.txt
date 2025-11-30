@@ -1,0 +1,59 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |1501 |       NEW |     READY |
+|                 0 |1505 |       NEW |     READY |
+|                 0 |1501 |     READY |   RUNNING |
+|                 3 |1501 |   RUNNING |   WAITING |
+|                 3 |1502 |       NEW |     READY |
+|                 3 |1503 |       NEW |     READY |
+|                 3 |1502 |     READY |   RUNNING |
+|                 4 |1504 |       NEW |     READY |
+|                 5 |1501 |   WAITING |     READY |
+|                 5 |1502 |   RUNNING |     READY |
+|                 5 |1501 |     READY |   RUNNING |
+|                 8 |1501 |   RUNNING |   WAITING |
+|                 8 |1502 |     READY |   RUNNING |
+|                10 |1501 |   WAITING |     READY |
+|                10 |1502 |   RUNNING |     READY |
+|                10 |1501 |     READY |   RUNNING |
+|                13 |1501 |   RUNNING |   WAITING |
+|                13 |1502 |     READY |   RUNNING |
+|                15 |1501 |   WAITING |     READY |
+|                15 |1502 |   RUNNING |     READY |
+|                15 |1501 |     READY |   RUNNING |
+|                18 |1501 |   RUNNING |   WAITING |
+|                18 |1502 |     READY |   RUNNING |
+|                20 |1501 |   WAITING |     READY |
+|                20 |1502 |   RUNNING |     READY |
+|                20 |1501 |     READY |   RUNNING |
+|                23 |1501 |   RUNNING |   WAITING |
+|                23 |1502 |     READY |   RUNNING |
+|                25 |1501 |   WAITING |     READY |
+|                25 |1502 |   RUNNING |   WAITING |
+|                25 |1501 |     READY |   RUNNING |
+|                27 |1502 |   WAITING |     READY |
+|                28 |1501 |   RUNNING |   WAITING |
+|                28 |1502 |     READY |   RUNNING |
+|                30 |1501 |   WAITING |     READY |
+|                30 |1502 |   RUNNING |     READY |
+|                30 |1501 |     READY |   RUNNING |
+|                33 |1501 |   RUNNING |TERMINATED |
+|                33 |1502 |     READY |   RUNNING |
+|                35 |1502 |   RUNNING |TERMINATED |
+|                35 |1503 |     READY |   RUNNING |
+|                56 |1503 |   RUNNING |TERMINATED |
+|                56 |1504 |     READY |   RUNNING |
+|                68 |1504 |   RUNNING |TERMINATED |
+|                68 |1505 |     READY |   RUNNING |
+|                71 |1505 |   RUNNING |   WAITING |
+|                73 |1505 |   WAITING |     READY |
+|                73 |1505 |     READY |   RUNNING |
+|                76 |1505 |   RUNNING |   WAITING |
+|                78 |1505 |   WAITING |     READY |
+|                78 |1505 |     READY |   RUNNING |
+|                81 |1505 |   RUNNING |   WAITING |
+|                83 |1505 |   WAITING |     READY |
+|                83 |1505 |     READY |   RUNNING |
+|                85 |1505 |   RUNNING |TERMINATED |
++------------------------------------------------+

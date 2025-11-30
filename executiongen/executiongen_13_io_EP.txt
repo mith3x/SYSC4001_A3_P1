@@ -1,0 +1,55 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |1302 |       NEW |     READY |
+|                 0 |1303 |       NEW |     READY |
+|                 0 |1302 |     READY |   RUNNING |
+|                 2 |1302 |   RUNNING |   WAITING |
+|                 2 |1301 |       NEW |     READY |
+|                 2 |1301 |     READY |   RUNNING |
+|                 5 |1302 |   WAITING |     READY |
+|                 5 |1301 |   RUNNING |   WAITING |
+|                 5 |1302 |     READY |   RUNNING |
+|                 7 |1302 |   RUNNING |   WAITING |
+|                 7 |1303 |     READY |   RUNNING |
+|                 9 |1303 |   RUNNING |   WAITING |
+|                10 |1302 |   WAITING |     READY |
+|                11 |1301 |   WAITING |     READY |
+|                10 |1302 |     READY |   RUNNING |
+|                12 |1302 |   RUNNING |   WAITING |
+|                12 |1301 |     READY |   RUNNING |
+|                15 |1303 |   WAITING |     READY |
+|                15 |1302 |   WAITING |     READY |
+|                15 |1301 |   RUNNING |   WAITING |
+|                15 |1302 |     READY |   RUNNING |
+|                17 |1302 |   RUNNING |   WAITING |
+|                17 |1303 |     READY |   RUNNING |
+|                19 |1303 |   RUNNING |   WAITING |
+|                20 |1302 |   WAITING |     READY |
+|                21 |1301 |   WAITING |     READY |
+|                20 |1302 |     READY |   RUNNING |
+|                22 |1302 |   RUNNING |TERMINATED |
+|                22 |1301 |     READY |   RUNNING |
+|                24 |1301 |   RUNNING |TERMINATED |
+|                25 |1303 |   WAITING |     READY |
+|                25 |1303 |     READY |   RUNNING |
+|                27 |1303 |   RUNNING |   WAITING |
+|                33 |1303 |   WAITING |     READY |
+|                33 |1303 |     READY |   RUNNING |
+|                35 |1303 |   RUNNING |   WAITING |
+|                41 |1303 |   WAITING |     READY |
+|                41 |1303 |     READY |   RUNNING |
+|                43 |1303 |   RUNNING |   WAITING |
+|                49 |1303 |   WAITING |     READY |
+|                49 |1303 |     READY |   RUNNING |
+|                51 |1303 |   RUNNING |   WAITING |
+|                57 |1303 |   WAITING |     READY |
+|                57 |1303 |     READY |   RUNNING |
+|                59 |1303 |   RUNNING |   WAITING |
+|                65 |1303 |   WAITING |     READY |
+|                65 |1303 |     READY |   RUNNING |
+|                67 |1303 |   RUNNING |   WAITING |
+|                73 |1303 |   WAITING |     READY |
+|                73 |1303 |     READY |   RUNNING |
+|                75 |1303 |   RUNNING |TERMINATED |
++------------------------------------------------+

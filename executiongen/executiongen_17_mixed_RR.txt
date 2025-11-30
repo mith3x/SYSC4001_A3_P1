@@ -1,0 +1,40 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |1703 |       NEW |     READY |
+|                 0 |1703 |     READY |   RUNNING |
+|                 1 |1701 |       NEW |     READY |
+|                 3 |1702 |       NEW |     READY |
+|                 6 |1703 |   RUNNING |   WAITING |
+|                 6 |1701 |     READY |   RUNNING |
+|                 9 |1703 |   WAITING |     READY |
+|                16 |1701 |   RUNNING |TERMINATED |
+|                16 |1702 |     READY |   RUNNING |
+|                19 |1702 |   RUNNING |   WAITING |
+|                20 |1702 |   WAITING |     READY |
+|                19 |1703 |     READY |   RUNNING |
+|                25 |1703 |   RUNNING |   WAITING |
+|                25 |1702 |     READY |   RUNNING |
+|                28 |1703 |   WAITING |     READY |
+|                28 |1702 |   RUNNING |   WAITING |
+|                29 |1702 |   WAITING |     READY |
+|                28 |1703 |     READY |   RUNNING |
+|                34 |1703 |   RUNNING |   WAITING |
+|                34 |1702 |     READY |   RUNNING |
+|                37 |1703 |   WAITING |     READY |
+|                37 |1702 |   RUNNING |   WAITING |
+|                38 |1702 |   WAITING |     READY |
+|                37 |1703 |     READY |   RUNNING |
+|                43 |1703 |   RUNNING |   WAITING |
+|                43 |1702 |     READY |   RUNNING |
+|                46 |1703 |   WAITING |     READY |
+|                46 |1702 |   RUNNING |   WAITING |
+|                47 |1702 |   WAITING |     READY |
+|                46 |1703 |     READY |   RUNNING |
+|                52 |1703 |   RUNNING |   WAITING |
+|                52 |1702 |     READY |   RUNNING |
+|                53 |1702 |   RUNNING |TERMINATED |
+|                55 |1703 |   WAITING |     READY |
+|                55 |1703 |     READY |   RUNNING |
+|                57 |1703 |   RUNNING |TERMINATED |
++------------------------------------------------+

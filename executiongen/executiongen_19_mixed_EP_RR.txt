@@ -1,0 +1,102 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |1903 |       NEW |     READY |
+|                 0 |1903 |     READY |   RUNNING |
+|                 1 |1904 |       NEW |     READY |
+|                 2 |1902 |       NEW |     READY |
+|                 2 |1903 |   RUNNING |     READY |
+|                 2 |1902 |     READY |   RUNNING |
+|                 3 |1905 |       NEW |     READY |
+|                 4 |1901 |       NEW |     READY |
+|                 4 |1902 |   RUNNING |     READY |
+|                 4 |1901 |     READY |   RUNNING |
+|                 5 |1906 |       NEW |     READY |
+|                29 |1901 |   RUNNING |TERMINATED |
+|                29 |1902 |     READY |   RUNNING |
+|                30 |1902 |   RUNNING |   WAITING |
+|                30 |1903 |     READY |   RUNNING |
+|                33 |1902 |   WAITING |     READY |
+|                33 |1903 |   RUNNING |     READY |
+|                33 |1902 |     READY |   RUNNING |
+|                36 |1902 |   RUNNING |   WAITING |
+|                36 |1903 |     READY |   RUNNING |
+|                37 |1903 |   RUNNING |   WAITING |
+|                37 |1904 |     READY |   RUNNING |
+|                39 |1902 |   WAITING |     READY |
+|                40 |1903 |   WAITING |     READY |
+|                39 |1904 |   RUNNING |     READY |
+|                39 |1902 |     READY |   RUNNING |
+|                42 |1902 |   RUNNING |   WAITING |
+|                42 |1903 |     READY |   RUNNING |
+|                45 |1902 |   WAITING |     READY |
+|                45 |1903 |   RUNNING |     READY |
+|                45 |1902 |     READY |   RUNNING |
+|                48 |1902 |   RUNNING |TERMINATED |
+|                48 |1903 |     READY |   RUNNING |
+|                51 |1903 |   RUNNING |   WAITING |
+|                51 |1904 |     READY |   RUNNING |
+|                52 |1904 |   RUNNING |   WAITING |
+|                52 |1905 |     READY |   RUNNING |
+|                54 |1903 |   WAITING |     READY |
+|                55 |1904 |   WAITING |     READY |
+|                54 |1905 |   RUNNING |     READY |
+|                54 |1903 |     READY |   RUNNING |
+|                57 |1903 |   RUNNING |TERMINATED |
+|                57 |1904 |     READY |   RUNNING |
+|                60 |1904 |   RUNNING |   WAITING |
+|                60 |1905 |     READY |   RUNNING |
+|                63 |1904 |   WAITING |     READY |
+|                63 |1905 |   RUNNING |     READY |
+|                63 |1904 |     READY |   RUNNING |
+|                66 |1904 |   RUNNING |   WAITING |
+|                66 |1905 |     READY |   RUNNING |
+|                69 |1904 |   WAITING |     READY |
+|                69 |1905 |   RUNNING |     READY |
+|                69 |1904 |     READY |   RUNNING |
+|                72 |1904 |   RUNNING |   WAITING |
+|                72 |1905 |     READY |   RUNNING |
+|                75 |1904 |   WAITING |     READY |
+|                75 |1905 |   RUNNING |     READY |
+|                75 |1904 |     READY |   RUNNING |
+|                78 |1904 |   RUNNING |   WAITING |
+|                78 |1905 |     READY |   RUNNING |
+|                81 |1904 |   WAITING |     READY |
+|                81 |1905 |   RUNNING |     READY |
+|                81 |1904 |     READY |   RUNNING |
+|                84 |1904 |   RUNNING |   WAITING |
+|                84 |1905 |     READY |   RUNNING |
+|                87 |1904 |   WAITING |     READY |
+|                87 |1905 |   RUNNING |     READY |
+|                87 |1904 |     READY |   RUNNING |
+|                90 |1904 |   RUNNING |   WAITING |
+|                90 |1905 |     READY |   RUNNING |
+|                93 |1904 |   WAITING |     READY |
+|                93 |1905 |   RUNNING |     READY |
+|                93 |1904 |     READY |   RUNNING |
+|                96 |1904 |   RUNNING |   WAITING |
+|                96 |1905 |     READY |   RUNNING |
+|                98 |1905 |   RUNNING |TERMINATED |
+|                99 |1904 |   WAITING |     READY |
+|                98 |1906 |     READY |   RUNNING |
+|                99 |1906 |   RUNNING |     READY |
+|                99 |1904 |     READY |   RUNNING |
+|               102 |1904 |   RUNNING |TERMINATED |
+|               102 |1906 |     READY |   RUNNING |
+|               107 |1906 |   RUNNING |   WAITING |
+|               108 |1906 |   WAITING |     READY |
+|               108 |1906 |     READY |   RUNNING |
+|               114 |1906 |   RUNNING |   WAITING |
+|               115 |1906 |   WAITING |     READY |
+|               115 |1906 |     READY |   RUNNING |
+|               121 |1906 |   RUNNING |   WAITING |
+|               122 |1906 |   WAITING |     READY |
+|               122 |1906 |     READY |   RUNNING |
+|               128 |1906 |   RUNNING |   WAITING |
+|               129 |1906 |   WAITING |     READY |
+|               129 |1906 |     READY |   RUNNING |
+|               135 |1906 |   RUNNING |   WAITING |
+|               136 |1906 |   WAITING |     READY |
+|               136 |1906 |     READY |   RUNNING |
+|               139 |1906 |   RUNNING |TERMINATED |
++------------------------------------------------+

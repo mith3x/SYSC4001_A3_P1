@@ -1,0 +1,43 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |2003 |       NEW |     READY |
+|                 0 |2003 |     READY |   RUNNING |
+|                 1 |2001 |       NEW |     READY |
+|                 2 |2005 |       NEW |     READY |
+|                 4 |2004 |       NEW |     READY |
+|                 5 |2002 |       NEW |     READY |
+|                15 |2003 |   RUNNING |TERMINATED |
+|                15 |2001 |     READY |   RUNNING |
+|                18 |2001 |   RUNNING |   WAITING |
+|                18 |2002 |     READY |   RUNNING |
+|                22 |2001 |   WAITING |     READY |
+|                51 |2002 |   RUNNING |TERMINATED |
+|                51 |2001 |     READY |   RUNNING |
+|                54 |2001 |   RUNNING |   WAITING |
+|                54 |2004 |     READY |   RUNNING |
+|                58 |2001 |   WAITING |     READY |
+|                64 |2004 |   RUNNING |   WAITING |
+|                64 |2001 |     READY |   RUNNING |
+|                66 |2004 |   WAITING |     READY |
+|                67 |2001 |   RUNNING |   WAITING |
+|                67 |2004 |     READY |   RUNNING |
+|                71 |2001 |   WAITING |     READY |
+|                72 |2004 |   RUNNING |TERMINATED |
+|                72 |2001 |     READY |   RUNNING |
+|                75 |2001 |   RUNNING |   WAITING |
+|                75 |2005 |     READY |   RUNNING |
+|                79 |2001 |   WAITING |     READY |
+|               104 |2005 |   RUNNING |TERMINATED |
+|               104 |2001 |     READY |   RUNNING |
+|               107 |2001 |   RUNNING |   WAITING |
+|               111 |2001 |   WAITING |     READY |
+|               111 |2001 |     READY |   RUNNING |
+|               114 |2001 |   RUNNING |   WAITING |
+|               118 |2001 |   WAITING |     READY |
+|               118 |2001 |     READY |   RUNNING |
+|               121 |2001 |   RUNNING |   WAITING |
+|               125 |2001 |   WAITING |     READY |
+|               125 |2001 |     READY |   RUNNING |
+|               126 |2001 |   RUNNING |TERMINATED |
++------------------------------------------------+

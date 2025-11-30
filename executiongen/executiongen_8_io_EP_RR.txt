@@ -1,0 +1,72 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 2 |802 |       NEW |     READY |
+|                 2 |803 |       NEW |     READY |
+|                 2 |804 |       NEW |     READY |
+|                 2 |802 |     READY |   RUNNING |
+|                 5 |802 |   RUNNING |   WAITING |
+|                 5 |801 |       NEW |     READY |
+|                 5 |801 |     READY |   RUNNING |
+|                10 |801 |   RUNNING |   WAITING |
+|                11 |802 |   WAITING |     READY |
+|                10 |803 |     READY |   RUNNING |
+|                11 |803 |   RUNNING |     READY |
+|                11 |802 |     READY |   RUNNING |
+|                14 |802 |   RUNNING |   WAITING |
+|                15 |801 |   WAITING |     READY |
+|                14 |803 |     READY |   RUNNING |
+|                15 |803 |   RUNNING |     READY |
+|                15 |801 |     READY |   RUNNING |
+|                20 |802 |   WAITING |     READY |
+|                20 |801 |   RUNNING |   WAITING |
+|                20 |802 |     READY |   RUNNING |
+|                23 |802 |   RUNNING |   WAITING |
+|                23 |803 |     READY |   RUNNING |
+|                25 |801 |   WAITING |     READY |
+|                25 |803 |   RUNNING |     READY |
+|                25 |801 |     READY |   RUNNING |
+|                29 |802 |   WAITING |     READY |
+|                30 |801 |   RUNNING |   WAITING |
+|                30 |802 |     READY |   RUNNING |
+|                33 |802 |   RUNNING |TERMINATED |
+|                33 |803 |     READY |   RUNNING |
+|                34 |803 |   RUNNING |   WAITING |
+|                35 |801 |   WAITING |     READY |
+|                34 |804 |     READY |   RUNNING |
+|                35 |804 |   RUNNING |     READY |
+|                35 |801 |     READY |   RUNNING |
+|                40 |803 |   WAITING |     READY |
+|                40 |801 |   RUNNING |   WAITING |
+|                40 |803 |     READY |   RUNNING |
+|                45 |801 |   WAITING |     READY |
+|                45 |803 |   RUNNING |   WAITING |
+|                45 |801 |     READY |   RUNNING |
+|                48 |801 |   RUNNING |TERMINATED |
+|                48 |804 |     READY |   RUNNING |
+|                50 |804 |   RUNNING |   WAITING |
+|                51 |803 |   WAITING |     READY |
+|                51 |803 |     READY |   RUNNING |
+|                56 |804 |   WAITING |     READY |
+|                56 |803 |   RUNNING |   WAITING |
+|                56 |804 |     READY |   RUNNING |
+|                59 |804 |   RUNNING |   WAITING |
+|                62 |803 |   WAITING |     READY |
+|                62 |803 |     READY |   RUNNING |
+|                65 |804 |   WAITING |     READY |
+|                67 |803 |   RUNNING |   WAITING |
+|                67 |804 |     READY |   RUNNING |
+|                70 |804 |   RUNNING |   WAITING |
+|                73 |803 |   WAITING |     READY |
+|                73 |803 |     READY |   RUNNING |
+|                76 |804 |   WAITING |     READY |
+|                78 |803 |   RUNNING |   WAITING |
+|                78 |804 |     READY |   RUNNING |
+|                81 |804 |   RUNNING |   WAITING |
+|                84 |803 |   WAITING |     READY |
+|                84 |803 |     READY |   RUNNING |
+|                85 |803 |   RUNNING |TERMINATED |
+|                87 |804 |   WAITING |     READY |
+|                87 |804 |     READY |   RUNNING |
+|                90 |804 |   RUNNING |TERMINATED |
++------------------------------------------------+

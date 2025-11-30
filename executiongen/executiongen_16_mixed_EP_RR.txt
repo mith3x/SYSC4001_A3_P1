@@ -1,0 +1,46 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |1606 |       NEW |     READY |
+|                 0 |1606 |     READY |   RUNNING |
+|                 2 |1603 |       NEW |     READY |
+|                 2 |1604 |       NEW |     READY |
+|                 2 |1606 |   RUNNING |     READY |
+|                 2 |1603 |     READY |   RUNNING |
+|                 3 |1601 |       NEW |     READY |
+|                 3 |1602 |       NEW |     READY |
+|                 3 |1603 |   RUNNING |     READY |
+|                 3 |1601 |     READY |   RUNNING |
+|                 5 |1605 |       NEW |     READY |
+|                13 |1601 |   RUNNING |   WAITING |
+|                14 |1601 |   WAITING |     READY |
+|                13 |1602 |     READY |   RUNNING |
+|                14 |1602 |   RUNNING |     READY |
+|                14 |1601 |     READY |   RUNNING |
+|                23 |1601 |   RUNNING |TERMINATED |
+|                23 |1602 |     READY |   RUNNING |
+|                28 |1602 |   RUNNING |TERMINATED |
+|                28 |1603 |     READY |   RUNNING |
+|                37 |1603 |   RUNNING |   WAITING |
+|                37 |1604 |     READY |   RUNNING |
+|                39 |1603 |   WAITING |     READY |
+|                39 |1604 |   RUNNING |     READY |
+|                39 |1603 |     READY |   RUNNING |
+|                49 |1603 |   RUNNING |   WAITING |
+|                49 |1604 |     READY |   RUNNING |
+|                51 |1603 |   WAITING |     READY |
+|                51 |1604 |   RUNNING |     READY |
+|                51 |1603 |     READY |   RUNNING |
+|                61 |1603 |   RUNNING |   WAITING |
+|                61 |1604 |     READY |   RUNNING |
+|                63 |1603 |   WAITING |     READY |
+|                63 |1604 |   RUNNING |     READY |
+|                63 |1603 |     READY |   RUNNING |
+|                66 |1603 |   RUNNING |TERMINATED |
+|                66 |1604 |     READY |   RUNNING |
+|                79 |1604 |   RUNNING |TERMINATED |
+|                79 |1605 |     READY |   RUNNING |
+|               119 |1605 |   RUNNING |TERMINATED |
+|               119 |1606 |     READY |   RUNNING |
+|               126 |1606 |   RUNNING |TERMINATED |
++------------------------------------------------+

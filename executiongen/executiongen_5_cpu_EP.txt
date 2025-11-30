@@ -1,0 +1,13 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |501 |       NEW |     READY |
+|                 0 |503 |       NEW |     READY |
+|                 0 |501 |     READY |   RUNNING |
+|                 2 |502 |       NEW |     READY |
+|                57 |501 |   RUNNING |TERMINATED |
+|                57 |502 |     READY |   RUNNING |
+|                77 |502 |   RUNNING |TERMINATED |
+|                77 |503 |     READY |   RUNNING |
+|               116 |503 |   RUNNING |TERMINATED |
++------------------------------------------------+

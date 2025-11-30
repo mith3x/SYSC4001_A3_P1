@@ -1,0 +1,72 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 2 |1002 |       NEW |     READY |
+|                 2 |1002 |     READY |   RUNNING |
+|                 5 |1002 |   RUNNING |   WAITING |
+|                 5 |1001 |       NEW |     READY |
+|                 5 |1003 |       NEW |     READY |
+|                 5 |1001 |     READY |   RUNNING |
+|                 9 |1001 |   RUNNING |   WAITING |
+|                10 |1002 |   WAITING |     READY |
+|                 9 |1003 |     READY |   RUNNING |
+|                10 |1003 |   RUNNING |     READY |
+|                10 |1002 |     READY |   RUNNING |
+|                13 |1001 |   WAITING |     READY |
+|                13 |1002 |   RUNNING |   WAITING |
+|                13 |1001 |     READY |   RUNNING |
+|                17 |1001 |   RUNNING |   WAITING |
+|                18 |1002 |   WAITING |     READY |
+|                17 |1003 |     READY |   RUNNING |
+|                18 |1003 |   RUNNING |     READY |
+|                18 |1002 |     READY |   RUNNING |
+|                21 |1001 |   WAITING |     READY |
+|                21 |1002 |   RUNNING |   WAITING |
+|                21 |1001 |     READY |   RUNNING |
+|                25 |1001 |   RUNNING |   WAITING |
+|                26 |1002 |   WAITING |     READY |
+|                25 |1003 |     READY |   RUNNING |
+|                26 |1003 |   RUNNING |   WAITING |
+|                26 |1002 |     READY |   RUNNING |
+|                29 |1001 |   WAITING |     READY |
+|                29 |1002 |   RUNNING |   WAITING |
+|                29 |1001 |     READY |   RUNNING |
+|                32 |1003 |   WAITING |     READY |
+|                33 |1001 |   RUNNING |   WAITING |
+|                34 |1002 |   WAITING |     READY |
+|                33 |1003 |     READY |   RUNNING |
+|                34 |1003 |   RUNNING |     READY |
+|                34 |1002 |     READY |   RUNNING |
+|                37 |1001 |   WAITING |     READY |
+|                37 |1002 |   RUNNING |   WAITING |
+|                37 |1001 |     READY |   RUNNING |
+|                41 |1001 |   RUNNING |   WAITING |
+|                42 |1002 |   WAITING |     READY |
+|                41 |1003 |     READY |   RUNNING |
+|                42 |1003 |   RUNNING |     READY |
+|                42 |1002 |     READY |   RUNNING |
+|                45 |1001 |   WAITING |     READY |
+|                45 |1002 |   RUNNING |   WAITING |
+|                45 |1001 |     READY |   RUNNING |
+|                49 |1001 |   RUNNING |   WAITING |
+|                50 |1002 |   WAITING |     READY |
+|                49 |1003 |     READY |   RUNNING |
+|                50 |1003 |   RUNNING |   WAITING |
+|                50 |1002 |     READY |   RUNNING |
+|                53 |1001 |   WAITING |     READY |
+|                53 |1002 |   RUNNING |TERMINATED |
+|                53 |1001 |     READY |   RUNNING |
+|                54 |1001 |   RUNNING |TERMINATED |
+|                56 |1003 |   WAITING |     READY |
+|                56 |1003 |     READY |   RUNNING |
+|                59 |1003 |   RUNNING |   WAITING |
+|                65 |1003 |   WAITING |     READY |
+|                65 |1003 |     READY |   RUNNING |
+|                68 |1003 |   RUNNING |   WAITING |
+|                74 |1003 |   WAITING |     READY |
+|                74 |1003 |     READY |   RUNNING |
+|                77 |1003 |   RUNNING |   WAITING |
+|                83 |1003 |   WAITING |     READY |
+|                83 |1003 |     READY |   RUNNING |
+|                84 |1003 |   RUNNING |TERMINATED |
++------------------------------------------------+

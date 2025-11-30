@@ -1,0 +1,50 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |1703 |       NEW |     READY |
+|                 0 |1703 |     READY |   RUNNING |
+|                 1 |1701 |       NEW |     READY |
+|                 1 |1703 |   RUNNING |     READY |
+|                 1 |1701 |     READY |   RUNNING |
+|                 3 |1702 |       NEW |     READY |
+|                11 |1701 |   RUNNING |TERMINATED |
+|                11 |1702 |     READY |   RUNNING |
+|                14 |1702 |   RUNNING |   WAITING |
+|                15 |1702 |   WAITING |     READY |
+|                14 |1703 |     READY |   RUNNING |
+|                15 |1703 |   RUNNING |     READY |
+|                15 |1702 |     READY |   RUNNING |
+|                18 |1702 |   RUNNING |   WAITING |
+|                19 |1702 |   WAITING |     READY |
+|                18 |1703 |     READY |   RUNNING |
+|                19 |1703 |   RUNNING |     READY |
+|                19 |1702 |     READY |   RUNNING |
+|                22 |1702 |   RUNNING |   WAITING |
+|                23 |1702 |   WAITING |     READY |
+|                22 |1703 |     READY |   RUNNING |
+|                23 |1703 |   RUNNING |     READY |
+|                23 |1702 |     READY |   RUNNING |
+|                26 |1702 |   RUNNING |   WAITING |
+|                27 |1702 |   WAITING |     READY |
+|                26 |1703 |     READY |   RUNNING |
+|                27 |1703 |   RUNNING |     READY |
+|                27 |1702 |     READY |   RUNNING |
+|                28 |1702 |   RUNNING |TERMINATED |
+|                28 |1703 |     READY |   RUNNING |
+|                29 |1703 |   RUNNING |   WAITING |
+|                32 |1703 |   WAITING |     READY |
+|                32 |1703 |     READY |   RUNNING |
+|                38 |1703 |   RUNNING |   WAITING |
+|                41 |1703 |   WAITING |     READY |
+|                41 |1703 |     READY |   RUNNING |
+|                47 |1703 |   RUNNING |   WAITING |
+|                50 |1703 |   WAITING |     READY |
+|                50 |1703 |     READY |   RUNNING |
+|                56 |1703 |   RUNNING |   WAITING |
+|                59 |1703 |   WAITING |     READY |
+|                59 |1703 |     READY |   RUNNING |
+|                65 |1703 |   RUNNING |   WAITING |
+|                68 |1703 |   WAITING |     READY |
+|                68 |1703 |     READY |   RUNNING |
+|                70 |1703 |   RUNNING |TERMINATED |
++------------------------------------------------+

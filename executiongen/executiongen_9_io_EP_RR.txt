@@ -1,0 +1,48 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |901 |       NEW |     READY |
+|                 0 |901 |     READY |   RUNNING |
+|                 3 |901 |   RUNNING |   WAITING |
+|                 3 |903 |       NEW |     READY |
+|                 3 |903 |     READY |   RUNNING |
+|                 4 |902 |       NEW |     READY |
+|                 4 |903 |   RUNNING |     READY |
+|                 4 |902 |     READY |   RUNNING |
+|                 6 |901 |   WAITING |     READY |
+|                 6 |902 |   RUNNING |     READY |
+|                 6 |901 |     READY |   RUNNING |
+|                 9 |901 |   RUNNING |   WAITING |
+|                 9 |902 |     READY |   RUNNING |
+|                12 |901 |   WAITING |     READY |
+|                12 |902 |   RUNNING |   WAITING |
+|                12 |901 |     READY |   RUNNING |
+|                15 |901 |   RUNNING |   WAITING |
+|                15 |903 |     READY |   RUNNING |
+|                17 |902 |   WAITING |     READY |
+|                18 |901 |   WAITING |     READY |
+|                17 |903 |   RUNNING |     READY |
+|                17 |902 |     READY |   RUNNING |
+|                18 |902 |   RUNNING |     READY |
+|                18 |901 |     READY |   RUNNING |
+|                20 |901 |   RUNNING |TERMINATED |
+|                20 |902 |     READY |   RUNNING |
+|                24 |902 |   RUNNING |TERMINATED |
+|                24 |903 |     READY |   RUNNING |
+|                25 |903 |   RUNNING |   WAITING |
+|                31 |903 |   WAITING |     READY |
+|                31 |903 |     READY |   RUNNING |
+|                35 |903 |   RUNNING |   WAITING |
+|                41 |903 |   WAITING |     READY |
+|                41 |903 |     READY |   RUNNING |
+|                45 |903 |   RUNNING |   WAITING |
+|                51 |903 |   WAITING |     READY |
+|                51 |903 |     READY |   RUNNING |
+|                55 |903 |   RUNNING |   WAITING |
+|                61 |903 |   WAITING |     READY |
+|                61 |903 |     READY |   RUNNING |
+|                65 |903 |   RUNNING |   WAITING |
+|                71 |903 |   WAITING |     READY |
+|                71 |903 |     READY |   RUNNING |
+|                75 |903 |   RUNNING |TERMINATED |
++------------------------------------------------+

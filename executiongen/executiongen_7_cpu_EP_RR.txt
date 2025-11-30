@@ -1,0 +1,18 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 1 |702 |       NEW |     READY |
+|                 1 |704 |       NEW |     READY |
+|                 1 |702 |     READY |   RUNNING |
+|                 3 |703 |       NEW |     READY |
+|                 5 |701 |       NEW |     READY |
+|                 5 |702 |   RUNNING |     READY |
+|                 5 |701 |     READY |   RUNNING |
+|                40 |701 |   RUNNING |TERMINATED |
+|                40 |702 |     READY |   RUNNING |
+|                53 |702 |   RUNNING |TERMINATED |
+|                53 |703 |     READY |   RUNNING |
+|                85 |703 |   RUNNING |TERMINATED |
+|                85 |704 |     READY |   RUNNING |
+|               136 |704 |   RUNNING |TERMINATED |
++------------------------------------------------+
