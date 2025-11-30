@@ -11,7 +11,7 @@ Files of interest
 
 Build & run (Windows PowerShell)
 ```powershell
-cd C:\Users\mithu\Downloads\part1
+
 if (-not (Test-Path .\bin)) { New-Item -ItemType Directory -Path .\bin | Out-Null }
 g++ -std=c++17 -Wall -Wextra interrupts_student1_student2_EP.cpp   -o .\bin\interrupts_EP.exe
 g++ -std=c++17 -Wall -Wextra interrupts_student1_student2_RR.cpp   -o .\bin\interrupts_RR.exe
