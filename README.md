@@ -19,12 +19,14 @@ g++ -std=c++17 -Wall -Wextra interrupts_student1_student2_EP_RR.cpp -o .\bin\int
 
 # Run one scheduler on a test file
 .\bin\interrupts_EP.exe .\test1.txt
-Get-Content .\execution.txt
+.\bin\interrupts_EP.exe .\test2.txt
+.\bin\interrupts_EP.exe .\test3.txt
+.\bin\interrupts_EP.exe .\test4.txt
+
+Get-Content .\execution1.txt
+Get-Content .\execution2.txt
+Get-Content .\execution3.txt
+Get-Content .\execution4.txt
 ```
 
-Pushing to GitHub
-- Create a repo on github.com (or use `gh repo create`) and push your local git repo. See the repository `Makefile` for build hints.
 
-Notes
-- The simulator writes `execution.txt` by default; copy or rename it after each run to avoid overwriting.
-- If you see BOM-related parsing errors, recreate test files with UTF-8 without BOM (PowerShell examples included earlier).
