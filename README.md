@@ -1,5 +1,11 @@
 # SYSC4001 — Assignment 3 Part 1 (Interrupts simulator)
 
+Lab section L3
+
+Dennis Chen, student#: 101236818
+
+Mithushan Ravichandramohan, student#: 101262467
+
 This repository contains three scheduler implementations (EP, RR, EP+RR) for a small interrupts/process simulator used in SYSC4001 assignment.
 
 Files of interest
